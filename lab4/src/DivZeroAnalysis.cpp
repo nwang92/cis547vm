@@ -32,7 +32,9 @@ Domain *evalPhiNode(PHINode *PHI, const Memory *Mem) {
   unsigned int n = PHI->getNumIncomingValues();
   Domain* joined = NULL;
   for(unsigned int i = 0; i < n; i++){
-    Domain* V = // eval PHI->getIncomingValue(i), manipulate Mem
+    // Add your code here
+    // eval PHI->getIncomingValue(i), translate it to a Domain, manipulate Mem
+    Domain* V = NULL;
     if(!joined){
       joined = V;
     }
